@@ -9,12 +9,10 @@
     text-decoration: none;
 }
 
-
+ 
 .locales{
-    margin-top: 60px; 
     background-color:burlywood;
 }
-
 
 
 .Titulo{
@@ -36,6 +34,7 @@
     padding: 80px;
     display: flex;
     justify-content: center;
+    background-color:burlywood;
 }
 
 .contenedor__formulario{
@@ -54,11 +53,6 @@ p{
 }
 
 .galeria{
-    display: grid;
-    display: flex;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 16px;
-    justify-content: center;
     background-color: burlywood;
 }
 
@@ -75,9 +69,23 @@ p{
 
 .img__local{
     width: 180px;
-   height: 200px;
-   object-fit: contain;
+    height: 200px;
+    object-fit: contain;
+  
+}
 
+.img__index{
+   height: 180px;
+    width: 50px;
+}
+
+.precio__producto{
+    font-weight: 600;
+}
+
+figcaption{
+    margin-top: 10px;
+    margin-left: 15px;
 }
 
 
@@ -86,7 +94,9 @@ p{
     margin-top: 15px;
 }
 
-
+.logo{
+    font-size: 60px;
+}
 
   footer{
       width: 100%;
@@ -161,9 +171,11 @@ p{
 
   }
 
+  
+
   /* grilla grid*/
 
-  .grilla{
+  /*.grilla{
       display: grid;
       grid-template-areas: 
       "header header header"
@@ -172,11 +184,12 @@ p{
       "footer footer footer";
       grid-template-rows: repeat(4,1fr);
       grid-template-columns: auto;
-  }
 
-  section#servicios{
-      grid-area:servicios;
-  }
+  }*/
+
+ /*.servicios{
+      grid-area:servicios; 
+  }*/
 
   section#publicidad{
       grid-area:publicidad;
@@ -187,23 +200,13 @@ p{
 
 @media screen and (max-width:768px) {
 
+
     body{
         font-size: 150%;
     }
     
     .logo{
         font-size: 40px;
-    }
-
- 
-
-    #seleccionado{
-        transform: scale(1);
-    }
-
-    .contenedor__imagenes{
-
-        grid-template-columns: repeat(3,3333.3%);
     }
 
     .contenedor__titulo{
@@ -213,18 +216,27 @@ p{
     }
 
 }
+    @media screen and (max-width:600px){
 
+        .logo{
+            font: size 40px; 
+        }
+
+        .contenedor__titulo{
+            font-size: 130%;
+        }
+
+
+    }
 
     @media screen and (max-width:420px){
 
-      
-
-        .contenedor__imagenes{
-            grid-template-columns: repeat(2,50%);
+        .logo{
+            font-size: 30px;
         }
-
-        .titulo{
-         font-size: 12px;
+  
+        .contenedor__titulo{
+         font-size: 100%;
         }
 
       
